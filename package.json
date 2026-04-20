@@ -1,0 +1,35 @@
+{
+  "name": "cookie-extension",
+  "version": "1.0.0",
+  "description": "Chrome MV3 extension for syncing cookie forwarding rules during development.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.14.1"
+  },
+  "scripts": {
+    "dev": "wxt --browser chrome --mv3",
+    "build": "wxt build --browser chrome --mv3",
+    "clean": "wxt clean",
+    "postinstall": "wxt prepare",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "vue-tsc --noEmit",
+    "verify:manifest": "node ./scripts/verify-manifest.mjs"
+  },
+  "dependencies": {
+    "vue": "^3.5.32"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "@vue/compiler-sfc": "^3.5.32",
+    "@vue/test-utils": "^2.4.6",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@wxt-dev/module-vue": "^1.0.3",
+    "happy-dom": "^20.9.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.4",
+    "vue-tsc": "^3.2.7",
+    "wxt": "^0.20.25"
+  }
+}
