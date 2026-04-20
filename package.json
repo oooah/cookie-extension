@@ -11,6 +11,8 @@
     "dev": "wxt --browser chrome --mv3",
     "build": "wxt build --browser chrome --mv3",
     "clean": "wxt clean",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
     "postinstall": "wxt prepare",
     "test": "vitest run",
     "test:watch": "vitest",
